@@ -1,0 +1,2 @@
+
+yarn add react-hook-form@6.15.4 react-router-dom@5.2.0 bootstrap@4.6.0 react-bootstrap@1.5.0
