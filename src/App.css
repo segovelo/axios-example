@@ -1,3 +1,32 @@
+.NavBarDiv {
+   margin-top: 20px;
+}
+.List{
+  list-style-type: none;
+}
+.ListButton {
+  display:  inline;
+  list-style-type: none;
+  background-color: rgb(238, 143, 163);
+  margin: 10px;
+  margin-top: 20px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+
+.NavBarLink {
+    font-weight: bold;
+    text-underline-position: unset;
+    color: whitesmoke;    
+}
+
+NavBarLink:visited {
+  text-decoration-color:salmon;
+}
+
+
 .App {
   text-align: center;
 }
