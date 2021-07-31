@@ -3,7 +3,7 @@ import React from "react";
 
 const baseURL = "https://jsonplaceholder.typicode.com/posts";
 
-export default function App() {
+const AxiosPost = (props) => {
   const [post, setPost] = React.useState(null);
 
   React.useEffect(() => {
@@ -33,5 +33,6 @@ export default function App() {
       <p>{post.body}</p>
       <button onClick={createPost}>Create Post</button>
     </div>
-  );
-}
+  )
+};
+export default AxiosPost;
