@@ -10,6 +10,7 @@ const NavBar = (props) => {
             <li className="ListButton"> <Link className="NavBarLink" to="/post">Post</Link></li>
             <li className="ListButton"> <Link className="NavBarLink" to="/put">Put</Link></li> 
             <li className="ListButton"><Link className="NavBarLink" to="/delete">Delete</Link></li>
+            <li className="ListButton"><Link className="NavBarLink" to="/error">Error</Link></li>
           </ul>
        </div>
        );

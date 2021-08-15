@@ -5,6 +5,7 @@ import AxiosGet from '../components/AxiosGet';
 import AxiosPost from '../components/AxiosPost';
 import AxiosPut from '../components/AxiosPut';
 import AxiosDelete from '../components/AxiosDelete';
+import AxiosError from '../components/AxiosError';
 import '../App.css';
 
 const AppRouter = () => (
@@ -16,6 +17,7 @@ const AppRouter = () => (
                 <Route component={AxiosPost} path="/post" />
                 <Route component={AxiosPut} path="/put" />
                 <Route component={AxiosDelete} path="/delete"/>
+                <Route component={AxiosError} path="/error"/>
             </Switch>
         </div>
     </BrowserRouter>
