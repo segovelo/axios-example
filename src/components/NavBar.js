@@ -11,7 +11,9 @@ const NavBar = () => {
             <li className="ListButton"> <Link className="NavBarLink" to="/put">Put</Link></li> 
             <li className="ListButton"><Link className="NavBarLink" to="/delete">Delete</Link></li>
             <li className="ListButton"><Link className="NavBarLink" to="/error">Error</Link></li>
-            <li className="ListButton"><Link className="NavBarLink" to="/create">Axios Instance</Link></li>
+            <li className="ListButton"><Link className="NavBarLink" to="/create">Create Instance</Link></li>
+            <li className="ListButton"><Link className="NavBarLink" to="/await">Async Await</Link></li>
+            <li className="ListButton"><Link className="NavBarLink" to="/useAxios">Hook</Link></li>
           </ul>
        </div>
        );

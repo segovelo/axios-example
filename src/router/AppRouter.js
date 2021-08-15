@@ -7,6 +7,8 @@ import AxiosPut from '../components/AxiosPut';
 import AxiosDelete from '../components/AxiosDelete';
 import AxiosError from '../components/AxiosError';
 import AxiosCreate from '../components/AxiosCreate';
+import AxiosAwait from '../components/AxiosAwait';
+import AxiosHook from '../components/AxiosHook';
 import '../App.css';
 
 const AppRouter = () => (
@@ -20,6 +22,8 @@ const AppRouter = () => (
                 <Route component={AxiosDelete} path="/delete"/>
                 <Route component={AxiosError} path="/error"/>
                 <Route component={AxiosCreate} path="/create"/>
+                <Route component={AxiosAwait} path="/await"/>
+                <Route component={AxiosHook} path="/useAxios"/>
             </Switch>
         </div>
     </BrowserRouter>
