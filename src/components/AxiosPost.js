@@ -3,7 +3,7 @@ import React from "react";
 
 const baseURL = "https://jsonplaceholder.typicode.com/posts";
 
-const AxiosPost = (props) => {
+const AxiosPost = () => {
   const [post, setPost] = React.useState(null);
 
   React.useEffect(() => {

@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import '../App.css';
 
-const NavBar = (props) => {
+const NavBar = () => {
     return(
         <div className="NavBarDiv">
           <ul className="List">
@@ -11,6 +11,7 @@ const NavBar = (props) => {
             <li className="ListButton"> <Link className="NavBarLink" to="/put">Put</Link></li> 
             <li className="ListButton"><Link className="NavBarLink" to="/delete">Delete</Link></li>
             <li className="ListButton"><Link className="NavBarLink" to="/error">Error</Link></li>
+            <li className="ListButton"><Link className="NavBarLink" to="/create">Axios Instance</Link></li>
           </ul>
        </div>
        );

@@ -1,23 +1,25 @@
 import axios from "axios";
 import React from "react";
 
-const baseURL = "https://jsonplaceholder.typicode.com/posts";
+const client = axios.create({
+    baseURL: "https://jsonplaceholder.typicode.com/posts" 
+  });
 
-const AxiosPut = () =>  {
+const AxiosCreate = () =>  {
   const [post, setPost] = React.useState(null);
 
   React.useEffect(() => {
-    axios.get(`${baseURL}/1`).then((response) => {
-      setPost(response.data);
+    client.get("/3").then((response) => {
+        setPost(response.data);
       console.log(response.data);
     });
   }, []);
 
   function updatePost() {
-    axios
-      .put(`${baseURL}/1`, {
+    client
+      .put("/3", {
         title: "Hello World! with UPDATE!!",
-        body: "This is an updated post."
+        body: "This is an updated post using create Axios instance."
       })
       .then((response) => {
         setPost(response.data);
@@ -35,4 +37,4 @@ const AxiosPut = () =>  {
     </div>
   )
 };
-export default AxiosPut;
+export default AxiosCreate;
