@@ -1,7 +1,4 @@
-import { domain } from 'process';
 import React from 'react';
-import { Button } from 'react-bootstrap';
-import history from '../components/history';
 import {Link} from 'react-router-dom';
 import '../App.css';
 

@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppRouter from './router/AppRouter';
+import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-ReactDOM.render(<AppRouter />, document.getElementById('root'));
+ReactDOM.render(
+    <React.StrictMode>
+        <App/>
+    </React.StrictMode>, 
+    document.getElementById('root'));

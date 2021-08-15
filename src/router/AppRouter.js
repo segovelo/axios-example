@@ -5,11 +5,10 @@ import AxiosGet from '../components/AxiosGet';
 import AxiosPost from '../components/AxiosPost';
 import AxiosPut from '../components/AxiosPut';
 import AxiosDelete from '../components/AxiosDelete';
-import history from '../components/history';
 import '../App.css';
 
 const AppRouter = () => (
-    <BrowserRouter history={history}>
+    <BrowserRouter>
         <div className="container">
             <NavBar className="NavBar"/>
             <Switch>
