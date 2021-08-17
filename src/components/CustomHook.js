@@ -1,36 +1,19 @@
 import React from "react";
-import { useState, useEffect } from 'react';
-import axios from "axios";
 import useAxios from '../components/useAxios';
 
 const CustomHook = () => {
-    const [data, setData] = useState([]);
-
     const { response, loading, error } =  useAxios({
         method: 'post',
-        url: '/posts',
-        headers: JSON.stringify({ accept: '*/*' }),
+        url: '/fakeData',
+        //headers: JSON.stringify({ accept: '*/*' }),
         body: JSON.stringify({
-            userId: 1,
-            id: 1,
-            title: 'New Post',
-            body: 'Sample text',
+            firstName: 'Carlos',
+            lastName: 'Fernandez',
+            checkbox: false, 
         }),
     });
-
-    useEffect(() => {  
-        axios.get('https://jsonplaceholder.typicode.com/posts/1').then((response) => {
-            setData(response.data);
-            console.log(response.data);
-          });
-        if (response !== null) {
-            setData(response);
-        }
-    }, [response]);
-
-
     return (
-        <div className='App'>
+        <div>
             <h1>Posts</h1>
 
             {loading ? (
@@ -42,7 +25,10 @@ const CustomHook = () => {
                             <p>Error Message: {error.message}</p>
                         </div>
                     )}
-                    <div>{data && <p>Data Title : {data.title}</p>}</div>
+                    <div><p> Response id: {response.id} </p> </div>
+                    <div><p> Response First Name: {response.firstName} </p> </div>
+                    <div><p> Response Last Name: {response.lastName} </p> </div>
+                    <div><p> Response checkBox: {response.checkbox.toString()}</p> </div>
                 </div>
             )}
         </div>
