@@ -9,6 +9,8 @@ import AxiosError from '../components/AxiosError';
 import AxiosCreate from '../components/AxiosCreate';
 import AxiosAwait from '../components/AxiosAwait';
 import AxiosHook from '../components/AxiosHook';
+import CheeseHook from '../components/CheeseHook';
+import CustomHook from '../components/CustomHook';
 import '../App.css';
 
 const AppRouter = () => (
@@ -24,6 +26,8 @@ const AppRouter = () => (
                 <Route component={AxiosCreate} path="/create"/>
                 <Route component={AxiosAwait} path="/await"/>
                 <Route component={AxiosHook} path="/useAxios"/>
+                <Route component={CheeseHook} path="/cheese"/>
+                <Route component={CustomHook} path="/custom"/>
             </Switch>
         </div>
     </BrowserRouter>
